@@ -1,0 +1,159 @@
+body {
+    background-image: url("beşir.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: "Anton", sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin: 20px 0;
+    background-image: url("logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.content {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    color: #ffcc00;
+    font-size: 2.8rem;
+    line-height: 1.5;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.foto-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.foto-1, .foto-2, .foto-3, .foto-4 {
+    width: 220px;
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.foto-1:hover, .foto-2:hover, .foto-3:hover, .foto-4:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+}
+
+.foto-1 {
+    background-image: url("beşir1.jpg");
+}
+
+.foto-2 {
+    background-image: url("beşir2.jpg");
+}
+
+.foto-3 {
+    background-image: url("beşir3.jpg");
+}
+
+.foto-4 {
+    background-image: url("beşir4.jpg");
+}
+
+.background-about {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10%;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.overlay {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(3px);
+    text-align: center;
+    color: #fff;
+    border-radius: 10%;
+    line-height: 1.6;
+}
+
+.a-link a {
+    margin: 10px 20px;
+    color: #ffcc00;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.a-link a:hover {
+    color: #fff;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+    .content {
+        font-size: 2.2rem;
+    }
+
+    .foto-container {
+        gap: 15px;
+    }
+
+    .foto-1, .foto-2, .foto-3, .foto-4 {
+        width: 180px;
+        height: 180px;
+    }
+
+    .background-about {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        font-size: 1.8rem;
+    }
+
+    .foto-container {
+        gap: 10px;
+    }
+
+    .foto-1, .foto-2, .foto-3, .foto-4 {
+        width: 150px;
+        height: 150px;
+    }
+}
